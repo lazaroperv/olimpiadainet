@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>gay</h1>
+    <header>
+            a*
+
+    </header>
+
+    <main>
+
+        <h1>gay</h1>
+
+    </main>
+
+    <footer>
+
+
+
+    
+    </footer>
+    
 </body>
 </html>
