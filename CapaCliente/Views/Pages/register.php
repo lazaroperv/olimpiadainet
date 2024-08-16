@@ -28,11 +28,32 @@
         <main>
 
 
-            <section class="register-users">
+            <section class="register-customers">
                 <form action="" method="post">
-
-                    
-
+                    <div class="form">
+                        <h2>Registrese</h2>
+                        <div class="in">
+                            <input type="number" name="cod-prod" placeholder="Ingrese codigo-producto">
+                        </div>
+                        <div class="in">
+                            <input type="text" name="desc-prod" placeholder="Ingrese su descripcion">
+                        </div>
+                        <div class="in">
+                            <input type="number" name="precio" placeholder="Ingrese su precio">
+                        </div>
+                        <div class="in">
+                            <input type="number" name="stock" placeholder="Stock del producto">
+                        </div>                       
+                         <div class="in">
+                            <input type="text" name="tipo" placeholder="tipo prod">
+                        </div>
+                        <div class="in">
+                            <input type="number" name="genero" placeholder="genero">
+                        </div>
+                        <div class="in">
+                            <input type="submit" name="regisprod">
+                        </div>
+                    </div>
                 </form>
             </section>
 
