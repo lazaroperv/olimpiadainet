@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php 
+    include '../../../ CapaServidor/Controller/conexion.php';
+    include '../../../ CapaServidor/Model/Models/alta.php';
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +24,7 @@
                 <li><a href="#">Opción 3</a></li>
             </ul>
         </div>
-        <a href="CapaCliente/Views/Pages/login.php">inicio de sesion</a>
+        <a href="login.php">inicio de sesion</a>
         <!-- menu desplegable -->
         <input type="search" name="buscar" id="">
         </header>
@@ -33,25 +37,25 @@
                     <div class="form">
                         <h2>Registrese</h2>
                         <div class="in">
-                            <input type="number" name="cod-prod" placeholder="Ingrese codigo-producto">
+                            <input type="number" name="codigoP" placeholder="Ingrese codigo-producto">
                         </div>
                         <div class="in">
-                            <input type="text" name="desc-prod" placeholder="Ingrese su descripcion">
+                            <input type="text" name="descripcionP" placeholder="Ingrese su descripcion">
                         </div>
                         <div class="in">
-                            <input type="number" name="precio" placeholder="Ingrese su precio">
+                            <input type="number" name="precioP" placeholder="Ingrese su precio">
                         </div>
                         <div class="in">
-                            <input type="number" name="stock" placeholder="Stock del producto">
+                            <input type="number" name="stockP" placeholder="Stock del producto">
                         </div>                       
                          <div class="in">
-                            <input type="text" name="tipo" placeholder="tipo prod">
+                            <input type="text" name="tipoP" placeholder="tipo prod">
                         </div>
                         <div class="in">
-                            <input type="number" name="genero" placeholder="genero">
+                            <input type="text" name="genero" placeholder="genero">
                         </div>
                         <div class="in">
-                            <input type="submit" name="regisprod">
+                            <input type="submit" name="SubirP" value="Subir">
                         </div>
                     </div>
                 </form>

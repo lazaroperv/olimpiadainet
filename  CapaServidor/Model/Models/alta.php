@@ -1,39 +1,23 @@
 <?php
    
-    if(!empty($_POST["registrarr"])){
-        if(empty($_POST["codigo"]) or empty($_POST["nombre"]) or empty($_POST["descripcion"]) or empty($_POST["precio"])) { 
+    if(!empty($_POST["SubirP"])){
+        if(empty($_POST["codigoP"]) or empty($_POST["descripcionP"]) or empty($_POST["precioP"]) or empty($_POST["stockP"]) or empty($_POST["tipoP"]) or empty($_POST["genero"])) { 
           
-            echo '<script class=pro>
-            Swal.fire({
-                title: "Incompleto!",
-                text: "Debe Rellenar los Campos para Continuar!",
-                icon: "info"
-              });
-            </script>';
+            echo "Debe Rellenar los Campos para Continuar!";
         }
         else{
-            $cod=$_POST["codigo"];
-            $nom=$_POST["nombre"];
-            $des=$_POST["descripcion"];
-            $pre=$_POST["precio"];
-            $sql=$ruta->query("insert into productos (cod_pro,nombre,descripcion,precio) values ('$cod','$nom','$des','$pre')");
+            $codP=$_POST["codigoP"];
+            $desP=$_POST["descripcionP"];
+            $preP=$_POST["precioP"];
+            $stoP=$_POST["stockP"];
+            $tipP=$_POST["tipoP"];
+            $gen=$_POST["genero"];
+            $sql=$ruta->query("insert into productos (codigo_producto,descripcion,precio_unitario,stock,tipo,genero	) values ('$codP','$desP','$preP','$stoP','$tipP','$gen')");
             if($sql==1){
-                echo '<div class="pro"><script>
-                Swal.fire({
-                    title: "Producto Registrado!",
-                    text: "Se Guardo en la Tabla Productos!",
-                    icon: "success"
-                  });
-                </script></div>';
+                echo "Se Guardo en la Tabla Productos!";
             }
             else{
-                echo '<script>
-                Swal.fire({
-                    title: "Upss!",
-                    text: "No se Guardo el Producto!",
-                    icon: "error"
-                  });
-                </script>';
+                echo "No se Guardo el Producto!";
             }
         }
     }

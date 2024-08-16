@@ -21,6 +21,7 @@
             </ul>
         </div>
         <a href="CapaCliente/Views/Pages/login.php">inicio de sesion</a>
+        <a href="CapaCliente/Views/Pages/register.php">Editar Productos</a>
         <!-- menu desplegable -->
         <input type="search" name="buscar" id="">
         </header>
