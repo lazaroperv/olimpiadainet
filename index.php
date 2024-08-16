@@ -1,5 +1,10 @@
+<?php
+    include "CapaServidor/Controller/conexion.php";
+    include "CapaServidor/Model/Models/listar.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +12,10 @@
     <link rel="stylesheet" href="Views/Styles/style.css">
     <script src="Views/Components/menu.js" defer></script>
 </head>
+
 <body>
     <header>
-        
+
         <a href="">inicio</a>
         <!-- menu desplegable -->
         <div class="menu-container">
@@ -23,45 +29,60 @@
         <a href="CapaCliente/Views/Pages/login.php">inicio de sesion</a>
         <!-- menu desplegable -->
         <input type="search" name="buscar" id="">
-        </header>
+    </header>
 
-        <main>
+    <main>
 
+        <h1>Listado</h1>
+            <?php
 
+                if ($resultado->num_rows > 0) {
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Repudiandae repellat consectetur amet doloribus eligendi ex nam officiis 
-                 sequi reprehenderit in? Eligendi dignissimos 
-                inventore vero exercitationem ipsum fuga in eum provident?</p>
+                    // Imprimir datos en un HTML
+                    echo '<table>';
+                    echo '<tr><th>Código</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Tipo</th>
+                        <th>Género</th></tr>';
+                    while($row = $resultado->fetch_assoc()) {
+                        echo "<tr>";
+                        echo "<td>" . $row["id_producto"] . "</td>";
+                        echo "<td>" . $row["codigo_producto"] . "</td>";
+                        echo "<td>" . $row["descripcion"] . "</td>";
+                        echo "<td>" . $row["precio_unitario"] . "</td>";
+                        echo "<td>" . $row["stock"] . "</td>";
+                        echo "<td>" . $row["tipo"] . "</td>";
+                        echo "<td>" . $row["genero"] . "</td>";
+                        echo "</tr>";
+                    }
+                    echo "</table>";
+                } else {
+                    echo "No hay resultados";
+                }
+            
+                
+            ?>
 
+    </main>
 
-        </main>
+    <footer>
+        <div>
+            <h4>Nosotros</h4>
+            <a href="">contacto</a>
+            <a href="">*</a>
+            <a href="">*</a>
+        </div>
+        <div>
+            <h4>Informacion</h4>
+            <a href="">Formas de pago</a>
+            <a href="">Talles</a>
+        </div>
 
-        <footer>
-                <div>
-                    <h4>Nosotros</h4>
-                    <a href="">contacto</a>
-                    <a href="">*</a>
-                    <a href="">*</a>
-                </div>
-                <div>
-                    <h4>Informacion</h4>
-                    <a href="">Formas de pago</a>
-                    <a href="">Talles</a>
-                </div>
-
-        </footer>
+    </footer>
 
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-        
