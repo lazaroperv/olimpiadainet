@@ -1,4 +1,4 @@
 <?php
-$ruta= new mysqli("localhost","root","","");
+$ruta= new mysqli("localhost","root","","sportcenter");
 $ruta->set_charset("utf8");
 ?>

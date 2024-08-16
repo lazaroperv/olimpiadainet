@@ -1,31 +1,19 @@
 <?php
-    if(!empty($_POST["ingresar"])){
-        if(!empty($_POST["usuario"]) and !empty($_POST["contraseña"])){
-            $user=$_POST["usuario"];
+    if(!empty($_POST["Ingresar"])){
+        if(!empty($_POST["email"]) and !empty($_POST["contraseña"])){
+            $ema=$_POST["email"];
             $clave=$_POST["contraseña"];
-            $sql=$ruta->query("select * from login where usuario='$user' and contraseña='$clave'");
+            $sql=$ruta->query("select * from clientes where email='$ema' and contraseña='$clave'");
             if($verificamos= $sql->fetch_object()){
-                header("Location:Vistas/Paginas/inicio.php");
+                header("Location:../../../index.php");
             }
             else{
-                echo '<script>
-                Swal.fire({
-                    title: "Upss!",
-                    text: "Parece que no Tiene Cuenta!",
-                    icon: "info"
-                  });
-                </script>';
+                echo "No tienes Cuenta";
             }
         }
         else{
            
-            echo '<script>
-            Swal.fire({
-                title: "Incompleto!",
-                text: "Debe ingresar Usuario y/o Contraseña!",
-                icon: "info"
-              });
-            </script>';
+            echo "Debe ingresar Usuario y/o Contraseña";
         }
 
     }
