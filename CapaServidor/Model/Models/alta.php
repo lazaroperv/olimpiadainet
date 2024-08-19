@@ -1,4 +1,9 @@
 <?php
+    
+    $ruta= new mysqli("localhost","root","","sportcenter");
+    $ruta->set_charset("utf8");
+    
+
    
     if(!empty($_POST["SubirP"])){
         if(empty($_POST["codigoP"]) or empty($_POST["descripcionP"]) or empty($_POST["precioP"]) or empty($_POST["stockP"]) or empty($_POST["tipoP"]) or empty($_POST["genero"])) { 
@@ -12,7 +17,9 @@
             $stoP=$_POST["stockP"];
             $tipP=$_POST["tipoP"];
             $gen=$_POST["genero"];
-            $sql=$ruta->query("insert into productos (codigo_producto,descripcion,precio_unitario,stock,tipo,genero	) values ('$codP','$desP','$preP','$stoP','$tipP','$gen')");
+            $sql=$ruta->query("INSERT INTO productos 
+            (codigo_producto,descripcion,precio_unitario,stock,tipo,genero)
+             VALUES ('$codP','$desP','$preP','$stoP','$tipP','$gen')");
             if($sql==1){
                 echo "Se Guardo en la Tabla Productos!";
             }
