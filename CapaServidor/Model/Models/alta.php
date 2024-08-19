@@ -34,7 +34,10 @@
             }
         }
     }
+<<<<<<< HEAD
     else{   
         echo "no relleno los campos";
     }
+=======
+>>>>>>> ee1b75352504f2afe70f592dfc399404f1f63685
 ?>
