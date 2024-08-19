@@ -11,7 +11,8 @@ include 'CapaServidor/Model/Models/search-products.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Views/Styles/style.css">
-    <script src="Views/Components/menu.js" defer></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.6.0.min.js"></script>
+    
 </head>
 <body>
     
@@ -29,7 +30,8 @@ include 'CapaServidor/Model/Models/search-products.php';
         <a href="CapaCliente/Views/Pages/login.php">inicio de sesion</a>
         <a href="CapaCliente/Views/Pages/altaP.php">Editar Productos</a>
         <!-- menu desplegable -->
-        
+        <input type="text" id="search-input" placeholder="Buscar Productos">
+        <div id="search-results"></div>
         </header>
 
         <main>
@@ -62,7 +64,7 @@ include 'CapaServidor/Model/Models/search-products.php';
 
         </footer>
 
-
+        <script src="CapaServidor/Components/js/search.js"></script>
 </body>
 </html>
 
