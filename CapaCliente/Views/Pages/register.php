@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-    include '../../../ CapaServidor/Controller/conexion.php';
-    include '../../../ CapaServidor/Model/Models/alta.php';
+    include '../../../CapaServidor/Controller/conexion.php';
+    include '../../../CapaServidor/Model/Models/alta.php';
 ?>
 <head>
     <meta charset="UTF-8">
