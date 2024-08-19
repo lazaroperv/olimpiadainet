@@ -1,3 +1,8 @@
+<?php
+include 'CapaServidor/Controller/conexion.php';
+include 'CapaServidor/Model/Models/listar.php';
+include 'CapaServidor/Model/Models/search-products.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +14,7 @@
     <script src="Views/Components/menu.js" defer></script>
 </head>
 <body>
-    <header>
+    
         
         <a href="">inicio</a>
         <!-- menu desplegable -->
@@ -24,7 +29,7 @@
         <a href="CapaCliente/Views/Pages/login.php">inicio de sesion</a>
         <a href="CapaCliente/Views/Pages/altaP.php">Editar Productos</a>
         <!-- menu desplegable -->
-        <input type="search" name="buscar" id="">
+        
         </header>
 
         <main>
