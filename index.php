@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,7 @@
             </ul>
         </div>
         <a href="CapaCliente/Views/Pages/login.php">inicio de sesion</a>
-        <a href="CapaCliente/Views/Pages/register.php">Editar Productos</a>
+        <a href="CapaCliente/Views/Pages/altaP.php">Editar Productos</a>
         <!-- menu desplegable -->
         <input type="search" name="buscar" id="">
         </header>
@@ -30,10 +31,13 @@
 
 
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Repudiandae repellat consectetur amet doloribus eligendi ex nam officiis 
-                 sequi reprehenderit in? Eligendi dignissimos 
-                inventore vero exercitationem ipsum fuga in eum provident?</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repudiandae repellat consectetur amet doloribus eligendi ex nam officiis 
+                sequi reprehenderit in? Eligendi dignissimos 
+                inventore vero exercitationem ipsum fuga in eum provident?
+            </p>
+           
 
 
         </main>
