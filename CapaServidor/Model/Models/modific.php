@@ -5,13 +5,13 @@
             echo "Debe Rellenar el Campo para Continuar!";
         }
         else{
-            $cod=$_POST["codigoP"];
+            $codP=$_POST["codigoP"];
             $desP=$_POST["descripcionP"];
             $preP=$_POST["precioP"];
             $stoP=$_POST["stockP"];
             $tipP=$_POST["tipoP"];
             $genP=$_POST["genero"];
-            $sql=$ruta->query("update productos set descripcion='$desP', precio_unitario='$preP', stock='$stoP',tipo='$tipP',genero='$genP' where codigo_producto='$cod'");
+            $sql=$ruta->query("update productos set descripcion='$desP', precio_unitario='$preP', stock='$stoP',tipo='$tipP',genero='$genP' where codigo_producto='$codP'");
             if($sql==1){
                 echo "Producto Actualizado!";
             }

@@ -1,9 +1,21 @@
-<section>
+<!DOCTYPE html>
+<html lang="en">
 <?php 
     include '../../../CapaServidor/Controller/conexion.php';
     include '../../../CapaServidor/Model/Models/baja.php';
-    include '../../../CapaServidor/Model/Models/alta.php';
+    include '../../../CapaServidor/Model/Models/modific.php';
 ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="" method="post">
+
+    <section>
+
 
             <div>
                 <input type="number" name="codigoP" placeholder="Ingrese codigo-producto" required>
@@ -30,4 +42,7 @@
             <div class="in">
                 <input type="submit" name="ModificarP" value="Editar">
             </div>
-</section>
+    </section>
+</form>
+</body>
+</html>
