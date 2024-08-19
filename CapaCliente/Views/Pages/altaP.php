@@ -14,7 +14,7 @@
 <body>
     <header>
         
-        <a href="">inicio</a>
+        <a href="../../../index.php">inicio</a>
         <!-- menu desplegable -->
         <div class="menu-container">
             <button class="menu-button">Click me!</button>
