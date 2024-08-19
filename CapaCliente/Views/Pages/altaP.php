@@ -47,7 +47,7 @@
                 <input type="number" name="precioP" placeholder="Ingrese su precio" value="">
             </div>
             <div class="in">
-                <input type="number" name="stockP" placeholder="Stock del producto" value=">
+                <input type="number" name="stockP" placeholder="Stock del producto" value="">
             </div>
             <div class="in">
                 <input type="text" name="tipoP" placeholder="remera/pantalon/zapatilla" value="">
