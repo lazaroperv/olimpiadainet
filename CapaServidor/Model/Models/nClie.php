@@ -20,7 +20,7 @@
             $ema=$_POST["email"];
             $con=$_POST["contraseña"];
             
-            $sql=$ruta->query("INSERT INTO clientes (nombre,apellido,email,contraseña,fecha_registro) 
+            $sql=$ruta->query("INSERT INTO clientes (nombre,apellido,email,contraseña,fecha_registro)
             VALUES ('$nom','$ape','$ema','$con','$fechaR')");
             if($sql==1){
                 echo "Se registroo!";
