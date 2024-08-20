@@ -1,8 +1,16 @@
 <?php 
-    $fechaR = date('Y-m-d H:i:s');
+    include '../../Controller/conexion.php';
+?>
+<?php
+     $fechaR = date('Y-m-d H:i:s');
 
+?>
+<?php
 
-     if(!empty($_POST["RegistrarC"])){
+   
+
+    if(!empty($_POST["RegistrarC"]))
+    {
         if(empty($_POST["nombre"]) or empty($_POST["apellido"]) or empty($_POST["email"]) or empty($_POST["contraseña"]) ) 
           {
             echo "Por favor complete todos los campos";
@@ -13,13 +21,13 @@
             $ema=$_POST["email"];
             $con=$_POST["contraseña"];
             
-            
-            $sql=$ruta->query("insert into clientes (nombre,apellido,email,contraseña,fecha_registro) values ('$nom','$ape','$ema','$con','$fechaR')");
+            $sql=$ruta->query("INSERT INTO clientes (nombre,apellido,email,contraseña,fecha_registro) 
+            VALUES ('$nom','$ape','$ema','$con','$fechaR')");
             if($sql==1){
                 echo "Se registroo!";
             }
             else{
-                echo "No se Guardo el Producto!";
+                echo "No se pudo registrar!";
             }
         }
     }

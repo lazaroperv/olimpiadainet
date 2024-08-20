@@ -16,7 +16,6 @@ include '../../../CapaServidor/Model/Models/nClie.php';
 </head>
 
 <body>
-    
 <main>
         <section class="container">
             <div class="form-section iniciar-sesion">
