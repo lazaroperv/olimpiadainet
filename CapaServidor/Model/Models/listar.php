@@ -1,6 +1,4 @@
-<?php
 
-?>
 <?php 
     
         $query = "SELECT * FROM productos";

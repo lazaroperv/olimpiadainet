@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <footer>
         <div class="container1">
             <div class="row">
@@ -26,9 +26,7 @@
     </footer>
 </body>
 </html>
-=======
 
->>>>>>> c73311af365c8dea0a1dfc9963ef7ce478b2a306
 
 
 
