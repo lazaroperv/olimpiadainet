@@ -1,5 +1,5 @@
 <?php 
-    include 'CapaServidor/Components/header.php';
-    include 'CapaServidor/Components/main.php';
-    include 'CapaServidor/Components/footer.php';
+    include 'CapaServidor/Components/estructura/header.php';
+    include 'CapaServidor/Components/estructura/main.php';
+    include 'CapaServidor/Components/estructura/footer.php';
 ?>

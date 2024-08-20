@@ -1,6 +1,4 @@
-<?php 
-    include '../../Controller/conexion.php';
-?>
+
 <?php
      $fechaR = date('Y-m-d H:i:s');
 
