@@ -1,23 +1,13 @@
-<<<<<<< HEAD
-
-<?php
-     $fechaR = date('Y-m-d H:i:s');
-
-?>
-<?php
-
-=======
 <?php 
     include '../../Controller/conexion.php';
 ?>
 <?php
+
      $fechaR = date('Y-m-d H:i:s');
 
 ?>
 <?php
-
->>>>>>> c73311af365c8dea0a1dfc9963ef7ce478b2a306
-   
+     $fechaR = date('Y-m-d H:i:s');
 
     if(!empty($_POST["RegistrarC"]))
     {
