@@ -1,42 +1,32 @@
-
+<style>
+    .tarjeta {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        width: 300px;
+        display: inline-block;
+    }
+</style>
 <?php 
-    
-        $query = "SELECT * FROM productos";
-        $resultado = $ruta->query($query);
+    $query = "SELECT * FROM productos";
+    $resultado = $ruta->query($query);
 
-        // Verificar si hay productos
-        if ($resultado->num_rows > 0) {
-            // Mostrar listado de productos
-            echo "<h1>Listado de productos</h1>";
-            echo "<table>";
-            while ($row = $resultado->fetch_assoc()) {
-                echo "<tr>" .
-                    "<th> codigo prod: " . "</th>" . 
-                    "<td>" . $row['codigo_producto'] . "</td>";
-                    "</tr>";
-                echo "<tr>" .
-                    "<th> descripcion: " . "</th>" . 
-                    "<td>" . $row['descripcion'] . "</td>";
-                    "</tr>";
-                echo "<tr>" .
-                    "<th> precio: $" . "</th>" . 
-                    "<td>" . $row['precio_unitario'] . "</td>";
-                    "</tr>";
-                echo "<tr>" .
-                    "<th> codigo prod: " . "</th>" . 
-                    "<td>" . $row['stock'] . "</td>";
-                    "</tr>";
-                echo "<tr>" .
-                    "<th> codigo prod: " . "</th>" . 
-                    "<td>" . $row['tipo'] . "</td>";
-                    "</tr>";
-                echo "<tr>" .
-                    "<th>  genero: " . "</th>" . 
-                    "<td>" . $row['genero'] . "</td>";
-                    "</tr>";
-            }
-            echo "</table>";
-        } else {
-            echo "No hay productos disponibles";
+    // Verificar si hay productos
+    if ($resultado->num_rows > 0) {
+        // Mostrar listado de productos
+        echo "<h1>Listado de productos</h1>";
+        while ($row = $resultado->fetch_assoc()) {
+            echo "<div class='tarjeta'>";
+            echo "<h5>" . $row['descripcion'] . "</h5>";
+            echo "<p>Código: " . $row['codigo_producto'] . "</p>";
+            echo "<p>Precio: $" . $row['precio_unitario'] . "</p>";
+            echo "<p>Stock: " . $row['stock'] . "</p>";
+            echo "<p>Tipo: " . $row['tipo'] . "</p>";
+            echo "<p>Género: " . $row['genero'] . "</p>";
+            echo "</div>";
         }
+    } else {
+        echo "No hay productos disponibles";
+    }
 ?>
