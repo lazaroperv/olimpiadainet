@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +22,11 @@
             </ul>
         </div>
         <input type="search" name="buscar" id="">
-        <a href="CapaCliente/Views/Pages/login.php">inicio de sesion</a>
+        <?php if (isset($_SESSION['autenticado']) && $_SESSION['autenticado']) { ?>
+            <a href="CapaServidor/Model/Models/logout.php">Cerrar sesión</a>
+        <?php } else { ?>
+            <a href="CapaCliente/Views/Pages/login.php">Iniciar sesión</a>
+        <?php } ?>
         <!-- esto se tiene que mostrar dependiendo si es el usuario admin o no -->
         <!-- <a href="CapaCliente/Views/Pages/altaP.php">Editar Productos</a> -->
 
