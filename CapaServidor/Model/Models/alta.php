@@ -30,7 +30,7 @@
              }else
             {          
 
-                echo "se registro";
+                echo '<script>alert("Producto Guardado!!!");</script>';
 
             }
         }

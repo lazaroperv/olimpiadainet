@@ -218,6 +218,39 @@ h3 {
 .contact-info a:hover {
   color: orange;
 }
+.cont{
+  display: flex;
+  margin-left: 470px;
+  margin-top: 80px;
+}
+.inn{
+  display: flex;
+  width: 400px;
+} 
+.btn{
+  background-color: rgb(85, 150, 150);
+  display: flex;
+  width: 400px; 
+  margin:auto;
+  border: solid 2px rgb(32, 37, 39) ;
+
+}
+.links{
+  background-color: #000000;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.links:hover{
+  text-decoration:underline;
+}
+.btn:hover{
+  background-color: rgb(24, 24, 24);
+  color: #ffffff;
+}
 
 
 

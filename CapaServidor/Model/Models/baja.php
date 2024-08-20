@@ -8,10 +8,10 @@
             $cod=$_POST["codigoP"];
             $sql=$ruta->query("delete from productos where codigo_producto='$cod'");
             if($sql==1){
-                echo "Se Elimino el Producto!";
+                echo '<script>alert("El Producto se elimino correctamente");</script>';
             }
             else{
-                echo  "No se Elimino el Producto!";
+                echo  '<script>alert("No se elimino el producto");</script>';
             }
         }
     }

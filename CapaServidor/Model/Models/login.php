@@ -4,7 +4,13 @@
             $ema=$_POST["email"];
             $clave=$_POST["contraseña"];
             $sql=$ruta->query("select * from clientes where email='$ema' and contraseña='$clave'");
+            $sqll=$ruta->query("select * from administradores where email='$ema' and contraseña='$clave'");
+            if($verificamos= $sqll->fetch_object()){
+                header("Location:../../../indexA.php");
+            }
             if($verificamos= $sql->fetch_object()){
+                header("Location:../../../index.php");
+            }elseif($verificamos= $sql->fetch_object()){
                 header("Location:../../../index.php");
             }
             else{
